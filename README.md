@@ -2,7 +2,6 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false|
 |name|string|null: false, unique: true|
 |email|string|null: false, unique: true|
 |passward|string|null: false, unique: true|
@@ -25,7 +24,6 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false|
 |group_id|integer|null: false|
 |body|text|
 |image|string|
