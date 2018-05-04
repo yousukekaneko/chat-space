@@ -3,11 +3,9 @@
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false, unique: true|
-|email|string|null: false, unique: true|
-|passward|string|null: false, unique: true|
 
 ### Association
-- has_many :group, through: :id
+- has_many :groups, through: :GroupUse
 - has_many :messages
 
 ## groupsテーブル
@@ -17,20 +15,21 @@
 |name|string|null: false|
 
 ### Association
-- has_many :members, through: :id
-- has_many :massages
+- has_many :members, through: :GroupUse
+- has_many :messages
 
 ## messagesテーブル
 
 |Column|Type|Options|
 |------|----|-------|
+|user_id|integer|null: false|
 |group_id|integer|null: false|
 |body|text|
 |image|string|
 
 ### Association
 - belongs_to :user
-- belongs_to :groups
+- belongs_to :group
 
 <!-- 中間テーブル  userとgroupsテーブルを繋ぐ-->
 ## GroupUseテーブル
@@ -41,4 +40,4 @@
 
 ### Association
 - belongs_to :user
-- belongs_to :groups
+- belongs_to :group
