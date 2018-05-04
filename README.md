@@ -11,7 +11,7 @@
 - has_many :group, through: :id
 - has_many :messages
 
-## groupテーブル
+## groupsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -32,10 +32,10 @@
 
 ### Association
 - belongs_to :user
-- belongs_to :group
+- belongs_to :groups
 
-<!-- 中間テーブル membersとgroupテーブルを繋ぐ-->
-## idテーブル
+<!-- 中間テーブル userとgroupsテーブルを繋ぐ-->
+## GroupUseテーブル
 |Column|Type|Options|
 |------|----|-------|
 |user_id|reference|null: false|
@@ -43,4 +43,4 @@
 
 ### Association
 - belongs_to :user
-- belongs_to :group
+- belongs_to :groups
