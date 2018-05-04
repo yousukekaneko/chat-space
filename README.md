@@ -1,4 +1,4 @@
-## membersテーブル
+## usersテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -15,8 +15,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|group_id|integer|null: false|
-|group_name|string|null: false|
+|name|string|null: false|
 
 ### Association
 - has_many :members, through: :id
@@ -27,11 +26,12 @@
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false|
+|group_id|integer|null: false|
 |body|text|
 |image|string|
 
 ### Association
-- belongs_to :members
+- belongs_to :user
 - belongs_to :group
 
 <!-- 中間テーブル membersとgroupテーブルを繋ぐ-->
@@ -42,5 +42,5 @@
 |group_id|reference|null: false|
 
 ### Association
-- belongs_to :members
+- belongs_to :user
 - belongs_to :group
