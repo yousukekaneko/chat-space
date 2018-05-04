@@ -34,7 +34,7 @@
 - belongs_to :user
 - belongs_to :groups
 
-<!-- 中間テーブル userとgroupsテーブルを繋ぐ-->
+<!-- 中間テーブル  userとgroupsテーブルを繋ぐ-->
 ## GroupUseテーブル
 |Column|Type|Options|
 |------|----|-------|
