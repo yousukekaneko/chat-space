@@ -7,14 +7,20 @@
 |email|string|null: false, unique: true|
 |passward|string|null: false, unique: true|
 
+### Association
+- has_many :group, through: :id
+- has_many :messages
+
 ## groupテーブル
 
 |Column|Type|Options|
 |------|----|-------|
 |group_id|integer|null: false|
 |group_name|string|null: false|
-|user_id|integer|null: false|
-|timestamps|null: false|
+
+### Association
+- has_many :members, through: :id
+- has_many :massages
 
 ## messagesテーブル
 
@@ -22,16 +28,19 @@
 |------|----|-------|
 |user_id|integer|null: false|
 |body|text|
-|timestamps|null: false|
-
-## imageテーブル
-
-|Column|Type|Options|
-|------|----|-------|
-|user_id|integer|null: false|
 |image|string|
-|timestamps|null: false|
 
 ### Association
-- belongs_to : group
-- belongs_to : user
+- belongs_to :members
+- belongs_to :group
+
+<!-- 中間テーブル membersとgroupテーブルを繋ぐ-->
+## idテーブル
+|Column|Type|Options|
+|------|----|-------|
+|user_id|reference|null: false|
+|group_id|reference|null: false|
+
+### Association
+- belongs_to :members
+- belongs_to :group
