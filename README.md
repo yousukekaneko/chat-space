@@ -5,8 +5,9 @@
 |name|string|null: false, unique: true|
 
 ### Association
-- has_many :groups, through: :GroupUse
+- has_many :groups, through: :group_use
 - has_many :messages
+- belongs_to :group_use
 
 ## groupsテーブル
 
@@ -15,8 +16,9 @@
 |name|string|null: false|
 
 ### Association
-- has_many :members, through: :GroupUse
+- has_many :uses, through: :group_use
 - has_many :messages
+- belongs_to :group_use
 
 ## messagesテーブル
 
@@ -31,13 +33,13 @@
 - belongs_to :user
 - belongs_to :group
 
-<!-- 中間テーブル  userとgroupsテーブルを繋ぐ-->
-## GroupUseテーブル
+<!-- 中間テーブル  usersとgroupsテーブルを繋ぐ-->
+## group_useテーブル
 |Column|Type|Options|
 |------|----|-------|
-|user_id|reference|null: false|
-|group_id|reference|null: false|
+|user|reference|null: false|
+|group|reference|null: false|
 
 ### Association
-- belongs_to :user
-- belongs_to :group
+- has_many :users
+- has_many :groups
