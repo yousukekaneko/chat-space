@@ -1,55 +1,26 @@
+/*!
+ * YUI 3.5.0 - reset.css (http://developer.yahoo.com/yui/3/cssreset/)
+ * http://cssreset.com
+ * Copyright 2012 Yahoo! Inc. All rights reserved.
+ * http://yuilibrary.com/license/
+ */
+/*
+    TODO will need to remove settings on HTML since we can't namespace it.
+    TODO with the prefix, should I group by selector or property for weight savings?
+*/
 html{
-    height: 100%;
     color:#000;
     background:#FFF;
 }
-  body{
-    height: 100%;
-    header{
-      background-color: #38aef0;
-       color: white;
-        text-align: center;
-    }
-  #box1 {
-    width: 260px;
-    height: 90px;
-    background-color: #2f3e51;
-    float: left;
-    padding: 0 20px;
-    text-align: left;
-  }
-
-  #box2 {
-    width: auto;
-    height: 90px;
-    float: left;
-    padding: 0 40px;
-    text-align: left;
-  }
-
-  #box3 {
-    width: 260px;
-    height: calc(100% - 90px);
-    background-color: #2f3e51;
-    float: left;
-    padding: 0 20px;
-    text-align: left;
-    clear: both;
-  }
-
-    #box4 {
-    width: calc(100% - 380px);
-    height: calc(100% - 90px);
-    float: left;
-    padding: 0 40px;
-    text-align: left;
-  }
-  }
-
-
-
-
-
+/*
+    TODO remove settings on BODY since we can't namespace it.
+*/
+/*
+    TODO test putting a class on HEAD.
+        - Fails on FF.
+*/
+body,
+div,
 dl,
 dt,
 dd,
