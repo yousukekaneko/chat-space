@@ -1,3 +1,48 @@
-// Place all the styles related to the messages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.header {
+    background-color: $header-color;
+    color: $white;
+    text-align: center;
+    width: 100%;
+}
+
+.left-content {
+              width: 300px;
+              height: 100vh;
+              float: left;
+              color: $white;
+
+              .small-box1 {
+                height: 90px;
+                background-color: $box1-color;
+                padding: 0 20px;
+                font-size: $size_16;
+                line-height: 90px;
+                font-weight: bold;
+            }
+
+              .small-box2 {
+                height: calc(100vh - 90px);
+                background-color: $box2-color;
+                padding: 20px 20px 0;
+
+              }
+}
+
+.right-content {
+                width: calc(100vw - 300px);
+                height: 100vh;
+                float: left;
+
+                .small-box3 {
+                  height: 90px;
+                  background-color: $white;
+                  padding: 0 40px;
+                }
+
+                .small-box4 {
+                  height: calc(100vh - 90px);
+                  width: calc(100vw - 380px);
+                  background-color: $box4-color;
+                  padding: 0 40px;
+                }
+}
