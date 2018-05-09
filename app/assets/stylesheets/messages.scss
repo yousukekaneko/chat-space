@@ -18,13 +18,28 @@
                 font-size: $size_16;
                 line-height: 90px;
                 font-weight: bold;
+
+              .d {
+                float: right;
+                margin-right: 5px;
+                line-height:90px;
+              }
             }
 
               .small-box2 {
                 height: calc(100vh - 90px);
                 background-color: $box2-color;
-                padding: 20px 20px 0;
+                padding: 20px 20px 42px;
 
+              .th {
+                font-size: $size_15;
+                margin-bottom: -2px;
+              }
+
+              .td {
+                font-size: $size_11;
+                margin-bottom: 40px;
+              }
               }
 }
 
@@ -37,12 +52,86 @@
                   height: 90px;
                   background-color: $white;
                   padding: 0 40px;
+                  position: relative;
+
+                .box3-1 {
+                  font-size: $size_20;
+                  color: $black;
+                  position: absolute;
+                  top: 30px;
                 }
 
+                .box3-2 {
+                  font-size: $size_12;
+                  color: $gray;
+                  position: absolute;
+                  top: 60px;
+                }
+
+                .editbox {
+                    color: $header-color;
+                    margin-top: 28px;
+                    padding: 8px 20px 8px 20px;
+                    border: 1px solid $header-color;
+                    float: right;
+                }
+            }
+
                 .small-box4 {
-                  height: calc(100vh - 90px);
+                  height: calc(100vh - 160px);
                   width: calc(100vw - 380px);
                   background-color: $box4-color;
-                  padding: 0 40px;
+                  padding: 42px  40px 0 40px;
+
+                .box4-1 {
+                  font-size: $size_16;
+                  font-weight: bold;
+                  color: $thinblack;
+                  display: inline-block;
+                  padding: 0px 10px 10px 0;
+                }
+
+                .box4-2 {
+                  font-size: $size_12;
+                  color: $gray;
+                  display: inline-block;
+                }
+
+                .box4-3 {
+                  font-size: $size_14;
+                  color: $thinblack;
+                  padding-bottom: 37px;
+                }
+            }
+                .footer {
+                  height: 50px;
+                  background-color: $footer;
+                  padding: 20px 40px 20px 50px;
+
+                .textbox {
+                  border: none;
+                  background-color: $white;
+                  line-height: 50px;
+                  color: $thinblack;
+                  height: 50px;
+                  width: calc(100% - 142.5px);
+                  padding-left: 10px;
+                }
+
+                .picture {
+                  float: right;
+                  line-height: 50px;
+                  padding:0 10px 0 10px;
+                  margin:0 15px 0 0;
+                  background-color: $white;
+                }
+
+                .sendbox {
+                  float: right;
+                  line-height:50px;
+                  color: $white;
+                  padding: 0 20px 0 20px;
+                  background-color: $header-color;
+                }
                 }
 }
