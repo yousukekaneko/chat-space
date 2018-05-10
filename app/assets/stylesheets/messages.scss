@@ -1,0 +1,148 @@
+.header {
+  background-color: $header-color;
+  color: $white;
+  text-align: center;
+  width: 100%;
+}
+
+.left-content {
+  width: 300px;
+  height: 100vh;
+  float: left;
+  color: $white;
+
+  &__header {
+    height: 90px;
+    background-color: $box1-color;
+    padding: 0 20px;
+    font-size: $size_16;
+    line-height: 90px;
+    font-weight: bold;
+  }
+
+  &__icon {
+    float: right;
+    margin-right: 5px;
+    line-height: 90px;
+  }
+
+
+  &__text {
+    height: calc(100% - 90px);
+    background-color: $box2-color;
+    padding: 0 20px;
+
+      &_space {
+        height: 20px;
+        background-color: $box2-color;
+      }
+
+      &_message1 {
+        font-size: $size_15;
+        margin-bottom: -2px;
+      }
+
+      &_message2 {
+        font-size: $size_11;
+        margin-bottom: 40px;
+      }
+  }
+}
+
+.right-content {
+  width: calc(100vw - 300px);
+  float: left;
+
+  &__header {
+    height: 90px;
+    background-color: $white;
+    padding: 0 40px;
+    position: relative;
+  }
+
+  &__message1 {
+    font-size: $size_20;
+    color: $black;
+    position: absolute;
+    top: 30px;
+  }
+
+  &__message2 {
+    font-size: $size_12;
+    color: $gray;
+    position: absolute;
+    top: 60px;
+  }
+
+  &__edit {
+    color: $header-color;
+    margin-top: 28px;
+    padding: 8px 20px 8px 20px;
+    border: 1px solid $header-color;
+    float: right;
+  }
+
+  &__body {
+    height: calc(100vh - 160px);
+    background-color: $box4-color;
+    padding: 0  40px;
+  }
+
+  &__space {
+    height: 46px;
+    background-color: $box4-color;
+  }
+
+  &__message3 {
+    font-size: $size_16;
+    font-weight: bold;
+    color: $thinblack;
+    display: inline-block;
+    padding: 0px 10px 10px 0;
+  }
+
+  &__date {
+    font-size: $size_12;
+    color: $gray;
+    display: inline-block;
+  }
+
+  &__message4 {
+    font-size: $size_14;
+    color: $thinblack;
+    padding-bottom: 37px;
+  }
+}
+
+.footer {
+  height: 50px;
+  margin-top: -20px;
+  background-color: $footer;
+  padding: 20px 40px 20px 50px;
+
+  &__text {
+    border: none;
+    background-color: $white;
+    line-height: 50px;
+    color: $thinblack;
+    height: 50px;
+    width: calc(100% - 134.5px);
+    padding-left: 10px;
+  }
+
+  &__picture {
+    float: right;
+    line-height: 50px;
+    padding:0 10px 0 0px;
+    margin:0 15px 0 0;
+    background-color: $white;
+  }
+
+  .input {
+    float: right;
+    line-height:50px;
+    color: $white;
+    padding: 0 20px 0 20px;
+    background-color: $header-color;
+  }
+}
