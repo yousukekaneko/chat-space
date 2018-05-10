@@ -1,149 +1,148 @@
 .header {
-    background-color: $header-color;
-    color: $white;
-    text-align: center;
-    width: 100%;
+  background-color: $header-color;
+  color: $white;
+  text-align: center;
+  width: 100%;
 }
 
 .left-content {
-              width: 300px;
-              height: 100vh;
-              float: left;
-              color: $white;
+  width: 300px;
+  height: 100vh;
+  float: left;
+  color: $white;
 
-              .left-content__box1 {
-                height: 90px;
-                background-color: $box1-color;
-                padding: 0 20px;
-                font-size: $size_16;
-                line-height: 90px;
-                font-weight: bold;
+  &__header {
+    height: 90px;
+    background-color: $box1-color;
+    padding: 0 20px;
+    font-size: $size_16;
+    line-height: 90px;
+    font-weight: bold;
+  }
 
-                  .left-content__icons {
-                    float: right;
-                    margin-right: 5px;
-                    line-height: 90px;
-                  }
-                }
+  &__icon {
+    float: right;
+    margin-right: 5px;
+    line-height: 90px;
+  }
 
-              .left-content__box2 {
-                height: calc(100% - 90px);
-                background-color: $box2-color;
-                padding: 0 20px;
 
-                  .left-content__box2--space {
-                    height: 20px;
-                    background-color: $box2-color;
-                    }
+  &__text {
+    height: calc(100% - 90px);
+    background-color: $box2-color;
+    padding: 0 20px;
 
-                  .left-content__box2--main_m {
-                    font-size: $size_15;
-                    margin-bottom: -2px;
-                    }
+      &_space {
+        height: 20px;
+        background-color: $box2-color;
+      }
 
-                  .left-content__box2--sub_m {
-                    font-size: $size_11;
-                    margin-bottom: 40px;
-                    }
-                }
+      &_message1 {
+        font-size: $size_15;
+        margin-bottom: -2px;
+      }
+
+      &_message2 {
+        font-size: $size_11;
+        margin-bottom: 40px;
+      }
+  }
 }
 
 .right-content {
-                width: calc(100vw - 300px);
-                height: 100vh;
-                float: left;
+  width: calc(100vw - 300px);
+  float: left;
 
-                .right-content__box1 {
-                  height: 90px;
-                  background-color: $white;
-                  padding: 0 40px;
-                  position: relative;
+  &__header {
+    height: 90px;
+    background-color: $white;
+    padding: 0 40px;
+    position: relative;
+  }
 
-                  .right-content__box1--main {
-                    font-size: $size_20;
-                    color: $black;
-                    position: absolute;
-                    top: 30px;
-                    }
+    &__header_message1 {
+    font-size: $size_20;
+    color: $black;
+    position: absolute;
+    top: 30px;
+  }
 
-                  .right-content__box1--sub {
-                    font-size: $size_12;
-                    color: $gray;
-                    position: absolute;
-                    top: 60px;
-                    }
+  &__header_message2 {
+    font-size: $size_12;
+    color: $gray;
+    position: absolute;
+    top: 60px;
+  }
 
-                  .right-content__box1--edit {
-                    color: $header-color;
-                    margin-top: 28px;
-                    padding: 8px 20px 8px 20px;
-                    border: 1px solid $header-color;
-                    float: right;
-                    }
-                }
+  &__header_edit {
+    color: $header-color;
+    margin-top: 28px;
+    padding: 8px 20px 8px 20px;
+    border: 1px solid $header-color;
+    float: right;
+  }
 
-                .right-content__box2 {
-                  height: calc(100vh - 160px);
-                  width: calc(100vw - 380px);
-                  background-color: $box4-color;
-                  padding: 0  40px;
+  &__body {
+    height: calc(100vh - 160px);
+    background-color: $box4-color;
+    padding: 0  40px;
+  }
 
-                  .right-content__box2--space {
-                    height: 46px;
-                    background-color: $box4-color;
-                    }
+  &__body_space {
+    height: 46px;
+    background-color: $box4-color;
+  }
 
-                  .right-content__box2--main-m {
-                    font-size: $size_16;
-                    font-weight: bold;
-                    color: $thinblack;
-                    display: inline-block;
-                    padding: 0px 10px 10px 0;
-                    }
+  &__body_message1 {
+    font-size: $size_16;
+    font-weight: bold;
+    color: $thinblack;
+    display: inline-block;
+    padding: 0px 10px 10px 0;
+  }
 
-                  .right-content__box2--date {
-                    font-size: $size_12;
-                    color: $gray;
-                    display: inline-block;
-                    }
+  &__body_date {
+    font-size: $size_12;
+    color: $gray;
+    display: inline-block;
+  }
 
-                  .right-content__box2--sub-m {
-                    font-size: $size_14;
-                    color: $thinblack;
-                    padding-bottom: 37px;
-                    }
-                  }
+  &__body_message2 {
+    font-size: $size_14;
+    color: $thinblack;
+    padding-bottom: 37px;
+  }
+}
 
-                .right-content__box3 {
-                  height: 50px;
-                  margin-top: -20px;
-                  background-color: $footer;
-                  padding: 20px 40px 20px 50px;
+.footer {
+  height: 50px;
+  margin-top: -20px;
+  background-color: $footer;
+  padding: 20px 40px 20px 50px;
 
-                  .right-content__box3--textbox {
-                    border: none;
-                    background-color: $white;
-                    line-height: 50px;
-                    color: $thinblack;
-                    height: 50px;
-                    width: calc(100% - 142.5px);
-                    padding-left: 10px;
-                    }
+  &__text {
+    border: none;
+    background-color: $white;
+    line-height: 50px;
+    color: $thinblack;
+    height: 50px;
+    width: calc(100% - 142.5px);
+    padding-left: 10px;
+  }
 
-                  .right-content__box3--picture {
-                    float: right;
-                    line-height: 50px;
-                    padding:0 10px 0 10px;
-                    margin:0 15px 0 0;
-                    background-color: $white;
-                    }
+  &__picture {
+    float: right;
+    line-height: 50px;
+    padding:0 10px 0 10px;
+    margin:0 15px 0 0;
+    background-color: $white;
+  }
 
-                  .right-content__box3--sendbox {
-                    float: right;
-                    line-height:50px;
-                    color: $white;
-                    padding: 0 20px 0 20px;
-                    background-color: $header-color;
-                    }
-                  }
+  &__sendbox {
+    float: right;
+    line-height:50px;
+    color: $white;
+    padding: 0 20px 0 20px;
+    background-color: $header-color;
+  }
 }
