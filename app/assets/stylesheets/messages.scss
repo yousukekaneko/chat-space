@@ -11,7 +11,7 @@
               float: left;
               color: $white;
 
-              .small-box1 {
+              .left-content__box1 {
                 height: 90px;
                 background-color: $box1-color;
                 padding: 0 20px;
@@ -19,29 +19,29 @@
                 line-height: 90px;
                 font-weight: bold;
 
-                  .icons {
+                  .left-content__icons {
                     float: right;
                     margin-right: 5px;
                     line-height: 90px;
                   }
                 }
 
-              .small-box2 {
+              .left-content__box2 {
                 height: calc(100% - 90px);
                 background-color: $box2-color;
                 padding: 0 20px;
 
-                  .small-box2_space {
+                  .left-content__box2--space {
                     height: 20px;
                     background-color: $box2-color;
                     }
 
-                  .main_m {
+                  .left-content__box2--main_m {
                     font-size: $size_15;
                     margin-bottom: -2px;
                     }
 
-                  .sub_m {
+                  .left-content__box2--sub_m {
                     font-size: $size_11;
                     margin-bottom: 40px;
                     }
@@ -53,27 +53,27 @@
                 height: 100vh;
                 float: left;
 
-                .small-box3 {
+                .right-content__box1 {
                   height: 90px;
                   background-color: $white;
                   padding: 0 40px;
                   position: relative;
 
-                  .box3-1 {
+                  .right-content__box1--main {
                     font-size: $size_20;
                     color: $black;
                     position: absolute;
                     top: 30px;
                     }
 
-                  .box3-2 {
+                  .right-content__box1--sub {
                     font-size: $size_12;
                     color: $gray;
                     position: absolute;
                     top: 60px;
                     }
 
-                  .editbox {
+                  .right-content__box1--edit {
                     color: $header-color;
                     margin-top: 28px;
                     padding: 8px 20px 8px 20px;
@@ -82,18 +82,18 @@
                     }
                 }
 
-                .small-box4 {
+                .right-content__box2 {
                   height: calc(100vh - 160px);
                   width: calc(100vw - 380px);
                   background-color: $box4-color;
                   padding: 0  40px;
 
-                  .small-box4_space {
+                  .right-content__box2--space {
                     height: 46px;
                     background-color: $box4-color;
                     }
 
-                  .box4-1 {
+                  .right-content__box2--main-m {
                     font-size: $size_16;
                     font-weight: bold;
                     color: $thinblack;
@@ -101,26 +101,26 @@
                     padding: 0px 10px 10px 0;
                     }
 
-                  .box4-2 {
+                  .right-content__box2--date {
                     font-size: $size_12;
                     color: $gray;
                     display: inline-block;
                     }
 
-                  .box4-3 {
+                  .right-content__box2--sub-m {
                     font-size: $size_14;
                     color: $thinblack;
                     padding-bottom: 37px;
                     }
                   }
 
-                .footer {
+                .right-content__box3 {
                   height: 50px;
                   margin-top: -20px;
                   background-color: $footer;
                   padding: 20px 40px 20px 50px;
 
-                  .textbox {
+                  .right-content__box3--textbox {
                     border: none;
                     background-color: $white;
                     line-height: 50px;
@@ -130,7 +130,7 @@
                     padding-left: 10px;
                     }
 
-                  .picture {
+                  .right-content__box3--picture {
                     float: right;
                     line-height: 50px;
                     padding:0 10px 0 10px;
@@ -138,7 +138,7 @@
                     background-color: $white;
                     }
 
-                  .sendbox {
+                  .right-content__box3--sendbox {
                     float: right;
                     line-height:50px;
                     color: $white;
