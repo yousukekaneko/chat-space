@@ -60,21 +60,21 @@
     position: relative;
   }
 
-    &__header_message1 {
+  &__message1 {
     font-size: $size_20;
     color: $black;
     position: absolute;
     top: 30px;
   }
 
-  &__header_message2 {
+  &__message2 {
     font-size: $size_12;
     color: $gray;
     position: absolute;
     top: 60px;
   }
 
-  &__header_edit {
+  &__edit {
     color: $header-color;
     margin-top: 28px;
     padding: 8px 20px 8px 20px;
@@ -88,12 +88,12 @@
     padding: 0  40px;
   }
 
-  &__body_space {
+  &__space {
     height: 46px;
     background-color: $box4-color;
   }
 
-  &__body_message1 {
+  &__message3 {
     font-size: $size_16;
     font-weight: bold;
     color: $thinblack;
@@ -101,13 +101,13 @@
     padding: 0px 10px 10px 0;
   }
 
-  &__body_date {
+  &__date {
     font-size: $size_12;
     color: $gray;
     display: inline-block;
   }
 
-  &__body_message2 {
+  &__message4 {
     font-size: $size_14;
     color: $thinblack;
     padding-bottom: 37px;
