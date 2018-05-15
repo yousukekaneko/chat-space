@@ -1,22 +1,4 @@
-.header
-  チャットグループが作成されました。
-.left-content
-  .left-content__header
-    %span 親の顔より見たコメント
-    %span.left-content__icon.icon.fa.fa-pencil-square-o
-    %span.left-content__icon.fa.fa-cog
-
-  .left-content__text
-    .left-content__text_space
-    %ul
-      %li.left-content__text_message1 これ出来てるのでは？
-      %li.left-content__text_message2 まだメッセージはありません。
-      %li.left-content__text_message1 いや、有りでしょ？
-      %li.left-content__text_message2 まだメッセージはありません。
-      %li.left-content__text_message1 もう許してよ！
-      %li.left-content__text_message2 まだメッセージはありません。
-      %li.left-content__text_message1 いつやるの？(半ギレ)
-      %li.left-content__text_message2 まだメッセージはありません。
+= render 'shared/side_bar'
 
 .right-content
   .right-content__header
@@ -26,16 +8,16 @@
 
   .right-content__body
     .right-content__space
-    .right-content__message3 三十にして立つ。
-    %span.right-content__date 2016/04/02
-    .right-content__message4 既に、31ですがそれは、、、
-    .right-content__message3 四十にして惑わず。
-    %span.right-content__date 2016/04/02
-    .right-content__message4 １０年以内に惑わなくなる気がしない。
+    .messages
+    = render @messages
+
+  .form
+    = form_for [@group, @message] do |f|
+      = f.text_field :content, class: 'form__text', placeholder: 'Type a message'
+      .form__picture
+        = f.label :image, class: 'form__picture__image' do
+          = fa_icon 'picture-o', class: 'icon'
+          = f.file_field :image, class: 'hidden'
+      = f.submit 'Send', class: 'form__submit'
 
 
-
-  %form.footer
-    %textarea.footer__text Type a message
-    %input{class: "input", type: "submit", value: "Send"}
-    %span.footer__picture.fa.fa-image

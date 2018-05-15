@@ -10,6 +10,7 @@
   height: 100vh;
   float: left;
   color: $white;
+  overflow: hidden;
 
   &__header {
     height: 90px;
@@ -26,25 +27,31 @@
     line-height: 90px;
   }
 
-
   &__text {
     height: calc(100% - 90px);
     background-color: $box2-color;
     padding: 0 20px;
+    overflow: scroll;
 
       &_space {
-        height: 20px;
-        background-color: $box2-color;
+        box-sizing: border-box;
+        padding: 20px 0 0;
       }
 
-      &_message1 {
+      &__name {
         font-size: $size_15;
-        margin-bottom: -2px;
+        color: white;
+        text-decoration: none;
+        list-style: none;
       }
 
-      &_message2 {
+      &__message {
         font-size: $size_11;
-        margin-bottom: 40px;
+        color: white;
+        margin-top: 5px;
+        padding-bottom: 40px;
+        text-decoration: none;
+        list-style: none;
       }
   }
 }
@@ -52,6 +59,7 @@
 .right-content {
   width: calc(100vw - 300px);
   float: left;
+  overflow: hidden;
 
   &__header {
     height: 90px;
@@ -83,13 +91,14 @@
   }
 
   &__body {
-    height: calc(100vh - 160px);
+    height: calc(100vh - 180px);
     background-color: $box4-color;
     padding: 0  40px;
+    overflow: scroll;
   }
 
   &__space {
-    height: 46px;
+    padding-top: 46px;
     background-color: $box4-color;
   }
 
@@ -114,35 +123,42 @@
   }
 }
 
-.footer {
-  height: 50px;
-  margin-top: -20px;
-  background-color: $footer;
-  padding: 20px 40px 20px 50px;
-
-  &__text {
-    border: none;
-    background-color: $white;
-    line-height: 50px;
-    color: $thinblack;
+.form {
+    background-color: $footer;
     height: 50px;
-    width: calc(100% - 134.5px);
-    padding-left: 10px;
-  }
+    padding: 20px 50px 20px 40px;
 
-  &__picture {
-    float: right;
-    line-height: 50px;
-    padding:0 10px 0 0px;
-    margin:0 15px 0 0;
-    background-color: $white;
-  }
+    &__text {
+      border: none;
+      float: left;
+      height: 50px;
+      width: calc(100% - 150px);
+    }
 
-  .input {
-    float: right;
-    line-height:50px;
-    color: $white;
-    padding: 0 20px 0 20px;
-    background-color: $header-color;
+    &__picture {
+      background-color: $white;
+      float: left;
+      height: 50px;
+      padding-right: 10px;
+
+      &__image {
+        font-size: $size_20;
+        line-height: 50px;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+    }
+    &__submit {
+      background-color: $light_blue;
+      border: none;
+      color: $white;
+      float: right;
+      font-size: $size_16;
+      height: 50px;
+      margin-left: 15px;
+      padding: 0 30px;
+    }
   }
-}
