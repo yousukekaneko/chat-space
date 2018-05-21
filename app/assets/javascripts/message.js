@@ -11,7 +11,8 @@ $(function(){
 </div>
 <div class="right-content__message4">
 <p class="lower-message__content">
-  ${message.content}
+  ${message.content}<br />
+    <img src="${message.image}" alt="">
 </p>
 
 </div>
@@ -22,6 +23,7 @@ $(function(){
     e.preventDefault();
     var formData = new FormData(this);
     var url = $(this).attr('action')
+    $('.form__text').val('')
     $.ajax({
       url: url,
       type: "POST",
@@ -33,6 +35,7 @@ $(function(){
     .done(function(data){
       var html = buildHTML(data);
       $('.right-content__body').append(html).animate({scrollTop: $('.right-content__body')[0].scrollHeight}, 450);
+
     })
     .fail(function(){
       alert('error');
