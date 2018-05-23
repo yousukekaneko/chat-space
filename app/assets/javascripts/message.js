@@ -1,5 +1,7 @@
 $(function(){
   function buildHTML(message) {
+    console.log(message)
+    var image_html = message.image == null ? `` : `<img src="${message.image}" alt="">` ;
     var html = `<div class="message">
 <div class="upper-message">
 <div class="right-content__message3">
@@ -12,9 +14,8 @@ $(function(){
 <div class="right-content__message4">
 <p class="lower-message__content">
   ${message.content}<br />
-    <img src="${message.image}" alt="">
+  ${image_html}
 </p>
-
 </div>
 </div>`
     return html;
@@ -23,7 +24,6 @@ $(function(){
     e.preventDefault();
     var formData = new FormData(this);
     var url = $(this).attr('action')
-    $('.form__text').val('')
     $.ajax({
       url: url,
       type: "POST",
@@ -35,7 +35,8 @@ $(function(){
     .done(function(data){
       var html = buildHTML(data);
       $('.right-content__body').append(html).animate({scrollTop: $('.right-content__body')[0].scrollHeight}, 450);
-
+      $('.form__message').val('');
+      $('.form__picture__image').val('');
     })
     .fail(function(){
       alert('error');
