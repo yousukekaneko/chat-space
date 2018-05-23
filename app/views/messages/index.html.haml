@@ -13,7 +13,7 @@
 
   .form
     = form_for [@group, @message] do |f|
-      = f.text_field :content, class: 'form__text', placeholder: 'Type a message'
+      = f.text_field :content, class: 'form__message', placeholder: ' Type a message'
       .form__picture
         = f.label :image, class: 'form__picture__image' do
           = fa_icon 'picture-o', class: 'icon'
