@@ -115,3 +115,18 @@
     border: 0;
   }
 }
+
+.chat-group-current-user {
+  padding: 0 15px;
+  line-height: 50px;
+  font-size: 14px;
+  border-bottom: 1px solid #ddd;
+
+  .chat-group-user__btn {
+    float: right;
+
+  &.chat-group-user__btn--remove {
+      color: #f05050;
+    }
+  }
+}
