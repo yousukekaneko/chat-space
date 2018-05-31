@@ -4,6 +4,7 @@ class Group < ApplicationRecord
   has_many :messages
 
   validates :name, presence: true
+<<<<<<< Updated upstream
 
   def show_last_message
     if (last_message = messages.last).present?
@@ -12,4 +13,6 @@ class Group < ApplicationRecord
       'まだメッセージはありません。'
     end
   end
+=======
+>>>>>>> Stashed changes
 end
