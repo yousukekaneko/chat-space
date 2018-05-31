@@ -53,6 +53,7 @@ $(function() {
   });
   $("#chat-member-space").on("click", ".chat-group-user__btn--remove", function() {
     $(".js-chat-member").remove();
+    $(this).parent().remove();
   });
   $("#new_group").on("click", ".chat-group-user__btn--remove", function() {
     $(".chat-group-current-user").remove();

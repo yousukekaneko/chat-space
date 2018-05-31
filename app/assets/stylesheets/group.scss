@@ -130,3 +130,10 @@
     }
   }
 }
+
+.chat-group-user__name.current-user {
+    padding: 0 15px;
+    line-height: 50px;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+}
