@@ -123,8 +123,21 @@
   }
 }
 
+<<<<<<< Updated upstream
 .form {
     background-color: $footer;
+=======
+.footer {
+  height: 50px;
+  background-color: $footer;
+  padding: 20px 40px 20px 50px;
+
+  &__text {
+    border: none;
+    background-color: $white;
+    line-height: 50px;
+    color: $thinblack;
+>>>>>>> Stashed changes
     height: 50px;
     padding: 20px 50px 20px 40px;
 
