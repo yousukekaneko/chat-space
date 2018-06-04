@@ -18,7 +18,7 @@ set :rbenv_ruby, '2.3.1'
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
 
-set :ssh_options, auth_methods: ['publickey'], keys: ['/User/kanekoyousuke/.ssh/kaneko-key.pem']
+set :ssh_options, auth_methods: ['publickey'], keys: ['/Users/kanekoyousuke/.ssh/kaneko-key.pem']
 
 # You can configure the Airbrussh format using :format_options.
 # These are the defaults.
