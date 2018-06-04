@@ -1,3 +1,4 @@
+
 $(function() {
   var nameList = $('#user-search-result');
   var memberSpace = $("#chat-member-space");
@@ -52,10 +53,6 @@ $(function() {
     $(this).parent().remove()
   });
   $("#chat-member-space").on("click", ".chat-group-user__btn--remove", function() {
-    $(".js-chat-member").remove();
     $(this).parent().remove();
-  });
-  $("#new_group").on("click", ".chat-group-user__btn--remove", function() {
-    $(".chat-group-current-user").remove();
   });
 });
