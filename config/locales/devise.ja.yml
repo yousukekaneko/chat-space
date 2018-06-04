@@ -1,5 +1,4 @@
 ja:
-<<<<<<< Updated upstream
   devise:
     confirmations:
       confirmed: 'アカウントを登録しました。'
@@ -59,7 +58,6 @@ ja:
       not_saved:
         one: "エラーが発生したため %{resource} は保存されませんでした:"
         other: "%{count} 件のエラーが発生したため %{resource} は保存されませんでした:"
-=======
   errors:
     messages:
       not_found: "は見つかりませんでした"
@@ -123,4 +121,3 @@ ja:
         subject: 'アカウントの凍結解除'
 #        subject: 'Unlock Instructions'
 
->>>>>>> Stashed changes
