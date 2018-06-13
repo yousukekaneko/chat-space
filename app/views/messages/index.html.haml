@@ -2,9 +2,12 @@
 
 .right-content
   .right-content__header
-    %span.right-content__message1 チーム夜型人間ズ
-    %span.right-content__edit Edit
-    .right-content__message2 午前中は、死亡遊戯...
+    %span.right-content__message1
+      = @group.name
+    %span.right-content__edit
+      = link_to "Edit", edit_user_path(current_user), style:"color:#38AEF0; text-decoration:none;"
+    %span.right-content__message2
+      = @group.show_last_message
 
   .right-content__body
     .right-content__space
